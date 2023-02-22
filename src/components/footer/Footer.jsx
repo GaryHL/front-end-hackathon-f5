@@ -40,7 +40,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs={12} md={6} className="text-center text-md-left">
-            <p className="text-white mb-0">&copy; 2023 All rights reserved</p>
+            <p className="text-black mb-0">&copy; 2023 All rights reserved</p>
           </Col>
         </Row>
       </Container>
