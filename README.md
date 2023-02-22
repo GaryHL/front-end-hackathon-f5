@@ -23,6 +23,8 @@
 
 ## 3. Team Members
 
+| Name | Role | |
+| :--- | :---: | :---: |
 | Mihaela Gheorghiu] | Scrum Master | https://github.com/mihaelagheorghiu10 |
 | Hilda Da Conceicao] | Scrum Master (aux) | https://github.com/Hildacaro |
 | Juan Benito de Valle Mateos] | Product Owner | https://github.com/Juan-Little |
