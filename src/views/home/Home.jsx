@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
+import Carousel from '../../components/carousel/Carousel'
 
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <h1>Vista home</h1>
+      <Navbar />
+      <Carousel />
+      <h1>Vista home</h1>
     </div>
   )
 }
