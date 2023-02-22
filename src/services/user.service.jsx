@@ -10,6 +10,6 @@ export const login = (data) => {
 };
 
 export const register = (data) => {
-   return axios.post(baseUrl + "/register_admin", data);
+   return axios.post(baseUrl + "/register", data);
 };
 
