@@ -8,11 +8,9 @@ const Footer = () => {
   return (
     <footer className="footer" style={{ backgroundColor: '#888DA7', position: 'fixed', bottom: 0, left: 0, right: 0 }}>
       <Container>
-        <Row>
-          <Col xs={12} md={6} className="text-center text-md-left">
-            <p className="text-white mb-0">&copy; 2023 Todos los derechos reservados</p>
-          </Col>
-          <Col xs={12} md={6} className="text-center text-md-right">
+        <Row className="justify-content-center align-items-center">
+
+          <Col xs={12} md={6} className="text-center text-md-right mt-3 mt-md-0">
             <ul className="list-inline mb-0">
               <li className="list-inline-item">
                 <a href="#">
@@ -40,6 +38,9 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+          </Col>
+          <Col xs={12} md={6} className="text-center text-md-left">
+            <p className="text-white mb-0">&copy; 2023 All rights reserved</p>
           </Col>
         </Row>
       </Container>
