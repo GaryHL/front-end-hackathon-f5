@@ -5,6 +5,7 @@ import Profile from "../views/profile/Profile";
 import Login from "../views/login/Login";
 import Register from "../views/register/Register";
 
+
 const Router = () => {
    return (
       <BrowserRouter>
