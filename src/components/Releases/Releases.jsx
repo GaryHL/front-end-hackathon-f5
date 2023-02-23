@@ -18,16 +18,17 @@ const Releases = () => {
       <h1 className="text"> TOP BOOKS </h1>
       <Row className="justify-content-center">
         <Col xs={12} md={6} lg={3} className="text-center">
-          <a href='#!' data-bs-toggle="modal" data-bs-target="modalImage1"></a>
-          <Image src={b12} fluid className="mb-3" style={{ height: '400px' }} onClick={handleShow}/>
+          <Image src={b12} fluid className="mb-3" style={{ height: '400px' }} />
           <ul class="list-unstyled">
             <li><strong>Little Women</strong></li>
             <li>Author: Louisa May Alcott</li>
             <li>Price: 23€</li>
+            <Button variant="info"><Link to='/details'>INFO</Link></Button>
             </ul>
             </Col>
             <Col xs={12} md={6} lg={3} className="text-center">
               <Image src={b5} fluid className="mb-3" style={{ height: '400px' }} />
+            </ul>
             </Col>
             <Col xs={12} md={6} lg={3} className="text-center">
               <Image src={b6} fluid className="mb-3" style={{ height: '400px' }} />
