@@ -5,6 +5,7 @@ import Profile from "../views/profile/Profile";
 import Login from "../views/login/Login";
 import Register from "../views/register/Register";
 import NavBar from "../components/navbar/Navbar";
+import BookDetail from "../views/book_detail/BookDetail";
 
 
 const Router = () => {
@@ -16,6 +17,7 @@ const Router = () => {
             <Route path="/profile" element={<Profile/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/register" element={<Register/>} />
+            <Route path="/book/:bookId" element={<BookDetail/>} />
          </Routes>
       </BrowserRouter>
    );

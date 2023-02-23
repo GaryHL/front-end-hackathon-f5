@@ -11,7 +11,7 @@ const Profile = () => {
   const handleRegister = async () => {
     const { data } = await getMyBooks();
     setBooks(data);
-    console.log("books",data)
+    console.log("books of users",data)
  };
 
     useEffect(() => {

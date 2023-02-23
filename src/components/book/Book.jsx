@@ -1,6 +1,7 @@
 import React from "react";
 import "./book.css";
 import {BsCartPlus} from 'react-icons/bs'
+import { Link } from "react-router-dom";
 
 const Book = ({ book }) => {
    const baseUrl = import.meta.env.VITE_IMAGES_URL;
@@ -8,8 +9,9 @@ const Book = ({ book }) => {
    console.log(baseUrl+book.image);
    return (
       <div className="container_book">
-         <div className="container_image">
+         <div className="container_image"><Link to={`/book/${book.id}`}>
             <img src={baseUrl+book.image} className="image" alt="" />
+         </Link>
          </div>
             <h4 className="title_book">{book.title}</h4>
          <div className="container_footer_book">

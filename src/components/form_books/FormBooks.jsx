@@ -50,7 +50,7 @@ const FormBooks = () => {
                 type="text"
                 {...register("title", {
                   required: true,
-                  maxLength: 8,
+                  maxLength: 42,
                 })}
               />
               {errors.title?.type === "required" && (

@@ -3,7 +3,11 @@ import axios from "axios";
 const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
 const token = localStorage.getItem("token");
-const id = localStorage.getItem("user_id");
+
+const id = () =>{
+   let id_storage = localStorage.getItem("user_id");
+   return id_storage
+}
 
 export const postBook = (data) => {
    const config = {
