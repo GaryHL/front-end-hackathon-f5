@@ -11,6 +11,7 @@ const Home = () => {
         <Navbar/>
         <Releases/>
         <Description/>
+   
         <Form/>
         <Footer/>
     </div>

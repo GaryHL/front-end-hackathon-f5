@@ -10,43 +10,50 @@ import b8 from '../../assets/images/b8.jpg'
 import b11 from '../../assets/images/b11.jpg'
 import b12 from '../../assets/images/b12.jpg'
 
+
 const Releases = () => {
   return (
-    
-<Container>
-<h1 className="text"> TOP BOOKS</h1>
-      <Row className="justify-content-center" >
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b12} fluid className="mb-3" style={{ height: '400px' }}/>
-        </Col>
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b5} fluid className="mb-3" style={{ height: '400px' }} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b6} fluid className="mb-3" style={{ height: '400px' }} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b1} fluid className="mb-3" style={{ height: '400px' }} />
-        </Col>
-      </Row>
 
-      <Row className="justify-content-center" >
+    <Container>
+      <h1 className="text"> TOP BOOKS </h1>
+      <Row className="justify-content-center">
         <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b8} fluid className="mb-3" style={{ height: '400px' }}/>
-        </Col>
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b7} fluid className="mb-3" style={{ height: '400px' }} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b11} fluid className="mb-3" style={{ height: '400px' }} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="text-center">
-          <Image src={b3} fluid className="mb-3" style={{ height: '400px' }} />
-        </Col>
-      </Row>
-    </Container>
-   
-  )
+          <a href='#!' data-bs-toggle="modal" data-bs-target="modalImage1"></a>
+          <Image src={b12} fluid className="mb-3" style={{ height: '400px' }} onClick={handleShow}/>
+          <ul class="list-unstyled">
+            <li><strong>Little Women</strong></li>
+            <li>Author: Louisa May Alcott</li>
+            <li>Price: 23€</li>
+            </ul>
+            </Col>
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b5} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b6} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b1} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center">
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b8} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b7} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b11} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+            <Col xs={12} md={6} lg={3} className="text-center">
+              <Image src={b3} fluid className="mb-3" style={{ height: '400px' }} />
+            </Col>
+          </Row>
+        </Container>
+        )
 }
 
-export default Releases
+
+        export default Releases
