@@ -1,5 +1,9 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
+import Form from '../../components/form/Form'
+import Releases from '../../components/Releases/Releases'
+import Description from '../../components/description/Description'
+import Footer from '../../components/footer/Footer'
 import Carousel from '../../components/carousel/Carousel'
 
 const Home = () => {
@@ -7,7 +11,10 @@ const Home = () => {
     <div>
       <Navbar />
       <Carousel />
-      <h1>Vista home</h1>
+      <Releases />
+      <Description />
+      <Form />
+      <Footer />
     </div>
   )
 }
