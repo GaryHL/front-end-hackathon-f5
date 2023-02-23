@@ -1,9 +1,8 @@
 .container_register_view{
-    width: 80%;
-    padding: 0vh 10%;
+    width: 100%;
     padding-top:15vh;
     padding-bottom:5vh;
-    min-height:80vh;
+    min-height:100vh;
     background-color: #F2F0F0;
     display:flex;
     flex-direction: column;
