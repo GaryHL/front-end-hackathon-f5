@@ -3,42 +3,43 @@ import Carousel from 'react-bootstrap/Carousel'
 
 function IndividualIntervalsExample() {
   return (
-    <Carousel>
+    <Carousel variant="dark">
       <Carousel.Item interval={1000}>
         <div>
           <img
-            style={{ maxHeight: '300px', maxWidth: '300px' }}
-            src="https://www.elsotano.com/imagenes/9786073/978607321945.JPG"
+            className="d-block w-100"
+            src="./src\assets\images\Rectangle 234.png"
             alt="First slide"
           />
         </div>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Unique Books</h3>
+          <p>
+            RareBooks is a marketplace where you find the most unique
+            second-hand books, research-technical manual and special edition
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
-          src="https://investigacion.unad.edu.co/images/investigacion/Imagen_del_sistema_de_investigaci%C3%B3n_2.jpg"
+          src="./src\assets\images\Rectangle 234 (1).png"
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>What you can do</h3>
+          <p>You have access to the most especials vendors</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/originals/0a/15/2e/0a152ee27ef4fad83d420dc5b6fc5228.jpg"
+          src="https://images.unsplash.com/3/alejandroescamilla-book.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1562&q=80"
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Get in contact</h3>
+          <p>Welcome to our community of book connoisseurs!</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
