@@ -5,6 +5,8 @@ import Releases from '../../components/Releases/Releases'
 import Description from '../../components/description/Description'
 import Footer from '../../components/footer/Footer'
 import Carousel from '../../components/carousel/Carousel'
+import Writers from '../../components/writers/Writers'
+
 import GridBooks from '../../components/grid_books/GridBooks'
 import { getAllBooks } from '../../services/books.service'
 
@@ -22,9 +24,10 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar/>
       <Carousel />
       <Releases />
-      <GridBooks books={dataBooks}/>
+      <Description />
       <Form />
       <Footer />
     </div>
