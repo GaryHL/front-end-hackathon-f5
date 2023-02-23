@@ -6,6 +6,7 @@ import Description from '../../components/description/Description'
 import Footer from '../../components/footer/Footer'
 import Carousel from '../../components/carousel/Carousel'
 
+
 const Home = () => {
   return (
     <div>
