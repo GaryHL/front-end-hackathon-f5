@@ -9,7 +9,6 @@ import Carousel from '../../components/carousel/Carousel'
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <Carousel />
       <Releases />
       <Description />
