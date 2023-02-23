@@ -1,14 +1,13 @@
 import React from 'react'
-import { Container, Row, Col, Image, Button } from 'react-bootstrap'
+import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import b1 from '../../assets/images/b1.jpg'
-
-
 
 const Releases = () => {
   return (
-    
-<Container>
-<h2>Description</h2>
+
+    <Container>
+      <h2>Description</h2>
       <Row className="justify-content-center">
         <Col xs={12} md={6} lg={3} className="text-center">
           <Image src={b1} fluid className="mb-3" />
@@ -20,11 +19,12 @@ const Releases = () => {
           <p><strong>Price: </strong>21€</p>
           <p><strong>Vendor: </strong>BornToRead</p>
           <p><strong>Location: </strong>Barcelona, Spain</p>
-          <Button variant="primary">Contact</Button>
+          <Link to='/compra'>Buy Now</Link>
+
         </Col>
       </Row>
     </Container>
-   
+
   )
 }
 

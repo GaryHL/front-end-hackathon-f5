@@ -31,7 +31,6 @@ function NavBar() {
             <Nav.Link href="#action2">My Books</Nav.Link>
             <Nav.Link href="#action3">Favourites</Nav.Link>
           </Nav>
-          
         </Navbar.Collapse>
       </Container>
     </Navbar>

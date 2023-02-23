@@ -4,6 +4,7 @@ import Home from "../views/home/Home";
 import Profile from "../views/profile/Profile";
 import Login from "../views/login/Login";
 import Register from "../views/register/Register";
+import Compra from "../views/favorites/compra";
 
 
 const Router = () => {
@@ -15,6 +16,7 @@ const Router = () => {
             <Route path="/profile" element={<Profile/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/register" element={<Register/>} />
+            <Route path="/compra" element={<Compra/>} />
          </Routes>
       </BrowserRouter>
    );
