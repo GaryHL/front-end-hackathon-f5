@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
+import Form from '../../components/form/Form'
 import Releases from '../../components/Releases/Releases'
 import Description from '../../components/description/Description'
 import Footer from '../../components/footer/Footer'
@@ -10,7 +11,7 @@ const Home = () => {
         <Navbar/>
         <Releases/>
         <Description/>
-        <h1>V</h1>
+        <Form/>
         <Footer/>
     </div>
   )
