@@ -1,22 +1,38 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
-import { useForm, Controller } from "react-hook-form";
+import { useForm} from "react-hook-form";
+import { postBook } from "../../services/books.service";
 
 import "./formBooks.css";
 
 //Form Hilda
 
 const FormBooks = () => {
-  const [checkButton, setCheckButton] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
-    control,
   } = useForm();
 
+  const handleSubmitBook = async (formData) => {
+      const { data } = await postBook(formData);
+      console.log("response form ",data);
+   };
+
   const customSubmit = (data) => {
-    console.log(data);
+  
+    console.log("data antes de ser transformada",data)
+    const formData = new FormData();
+    formData.append('title', data.title);
+    formData.append('description', data.description);
+    formData.append('image', data.image[0]);
+    formData.append('category', data.category);
+    formData.append('price', data.price);
+    console.log('data',data)
+    handleSubmitBook(formData);
+    
+    console.log("dataForm",formData);
     swal("Submitted form!", "Successful validation", "Success");
   };
 
@@ -78,7 +94,7 @@ const FormBooks = () => {
                 type="text"
                 {...register("category", {
                   required: true,
-                  maxLength: 8,
+                  maxLength: 16,
                 })}
               />
               {errors.category?.type === "required" && (
@@ -94,10 +110,9 @@ const FormBooks = () => {
               <input
                 className="place"
                 placeholder="Enter price"
-                type="text"
+                type="number"
                 {...register("price", {
                   required: true,
-                  maxLength: 8,
                 })}
               />
               {errors.price?.type === "required" && (
@@ -113,58 +128,17 @@ const FormBooks = () => {
               <input
                 className="place"
                 placeholder="Enter price"
-                type="number"
-                {...register("title", {
+                type="file"
+                {...register("image", {
                   required: true,
-                  
                 })}
               />
-              {errors.name?.type === "required" && (
+              {errors.image?.type === "required" && (
                 <small className="fail">The field cannot be empty</small>
               )}
-              {errors.name?.type === "maxLength" && (
+              {errors.image?.type === "maxLength" && (
                 <small className="fail">Maximum characters are eight</small>
               )}
-            </div>
-
-            <div className="form-check form-switch">
-              <Controller
-                name="checkbox"
-                control={control}
-                rules={{ required: true }}
-                render={({ field }) => (
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    {...field}
-                  />
-                )}
-              />
-              <label>I accept terms and conditions</label>
-              {errors.checkbox?.type === "required" && (
-                <small className="fail">
-                  The field cannot be empty
-                  <br></br>
-                </small>
-              )}
-            </div>
-
-            <div className="form-check">
-              <Controller
-                name="checkbox"
-                control={control}
-                rules={{ required: true }}
-                render={({ field }) => (
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    {...field}
-                  />
-                )}
-              />
-              <label>
-                Accept if you want to receive news from our Newsletter
-              </label>
             </div>
 
             <div className="form">

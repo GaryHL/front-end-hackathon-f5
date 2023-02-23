@@ -27,6 +27,7 @@ const Register = () => {
       console.log(data)
       localStorage.setItem('token',data.token)
       localStorage.setItem('user_name',data.user.name)
+      localStorage.setItem('user_id',data.user.id)
    };
 
    const handleSubmit = (event) => {
