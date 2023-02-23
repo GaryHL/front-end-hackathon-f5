@@ -1,0 +1,36 @@
+.container_book {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+ }
+ .container_image {
+    background: url(image.png);
+    filter: drop-shadow(0px 274px 110px rgba(0, 0, 0, 0.01))
+       drop-shadow(0px 154px 93px rgba(0, 0, 0, 0.05))
+       drop-shadow(0px 69px 69px rgba(0, 0, 0, 0.09))
+       drop-shadow(0px 17px 38px rgba(0, 0, 0, 0.1))
+       drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    aspect-ratio: 3/4.5;
+    transition: 0.3s ease-in-out;
+ }
+ .image{
+    background: url(image.png);
+    filter: drop-shadow(0px 274px 110px rgba(0, 0, 0, 0.01))
+       drop-shadow(0px 154px 93px rgba(0, 0, 0, 0.05))
+       drop-shadow(0px 69px 69px rgba(0, 0, 0, 0.09))
+       drop-shadow(0px 17px 38px rgba(0, 0, 0, 0.1))
+       drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    aspect-ratio: 3/4.5;
+    transition: 0.3s ease-in-out;
+
+ }
+ .image:hover{
+    transition: 0.3s ease-in-out;
+    scale:1.02;
+ }
