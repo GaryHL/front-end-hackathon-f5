@@ -3,7 +3,7 @@
     max-width: 100%;
     background-color: #fff;
     padding: 0px 20px;
-    border: 3px solid #a9dddc;
+    border: 3px solid #F9F9F9;
     margin: 10px 20px;
   }
   h2 {
@@ -17,8 +17,8 @@
   }
   
   .form-check-input:checked {
-    background-color: #a9dddc !important;
-    border-color: #a9dddc !important;
+    background-color: #888DA7 !important;
+    border-color: #888DA7 !important;
   }
   
   .form-control {
@@ -40,15 +40,15 @@
     font-size: 16px;
     padding: 12px;
     width: 100%;
-    border: 3px solid #a9dddc;
+    border: 3px solid #888DA7;
   }
   .form-control,
   input:focus {
     outline: none;
   }
   .form-react button {
-    background: #a9dddc;
-    border: 1px solid #a9dddc;
+    background: #888DA7;
+    border: 1px solid #888DA7;
     border-radius: 8px;
     color: #050505;
     display: block;
@@ -58,7 +58,7 @@
     margin: 20px 50px;
   }
   .form-react button:hover {
-    background-color: #79cac9;
+    background-color: #363e65;
   }
   .fail {
     color: #f2317f;
@@ -260,14 +260,18 @@
     .container-form {
       width: 46%;
       margin-left: 77px;
+      border: 3px solid #F9F9F9;
+     
+   
+      
+
     
     }
 
    
   
     .form-section {
-      background-image: url("./img/photo-form.jpg");
-      
+      background-image: url("../../assets/images/form.png");
       background-repeat: no-repeat;
       background-size: cover;
       align-items: center;
@@ -292,15 +296,17 @@
   @media screen and (min-width: 1200px) {
     .container-form {
       width: 40%;
-      margin-left: 200px;
+      margin-left: 100px;
+      border: 3px solid #F9F9F9;
+      
     }
 
     .form-control input {
         width:95%;
     }
     .form-section {
-      background-image: url("./img/photo-form.jpg");
-      height: 100vh;
+      background-image: url("../../assets/images/form.png");
+      height: 90vh;
       background-size: 100% cover;
       background-repeat: no-repeat;
       width: 100%;

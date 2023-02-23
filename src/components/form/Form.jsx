@@ -17,7 +17,7 @@ const FormValidation = () => {
 
   const customSubmit = (data) => {
     console.log(data);
-    swal("Formulario enviado!", "Validación exitosa", "success");
+    swal("Submitted form!", "Successful validation", "Success");
   };
 
   return (
@@ -25,12 +25,12 @@ const FormValidation = () => {
       <div className="form-section" id="form">
         <div className="container-form">
           <form onSubmit={handleSubmit(customSubmit)} className="form-react">
-            <h2>Contáctanos</h2>
+            <h2>Contact us</h2>
             <div className="form-control">
-              <label>Nombre</label>
+              <label>Name</label>
               <input
                 className="rectangle"
-                placeholder="Ingrese nombre"
+                placeholder="Enter name"
                 type="text"
                 {...register("name", {
                   required: true,
@@ -38,18 +38,18 @@ const FormValidation = () => {
                 })}
               />
               {errors.name?.type === "required" && (
-                <small className="fail">El campo no puede estar vacío</small>
+                <small className="fail">The field cannot be empty</small>
               )}
               {errors.name?.type === "maxLength" && (
-                <small className="fail">El máximo de caracateres es 8</small>
+                <small className="fail">Maximum characters are eight</small>
               )}
             </div>
 
             <div className="form-control">
-              <label>Email</label>
+              <label>Mail</label>
               <input
                 className="rectangle"
-                placeholder="Ingrese apellido"
+                placeholder="Enter last name"
                 type="text"
                 {...register("email", {
                   required: true,
@@ -57,22 +57,22 @@ const FormValidation = () => {
                 })}
               />
               {errors.email?.type === "required" && (
-                <small className="fail">El campo no puede estar vacío</small>
+                <small className="fail">The field cannot be empty</small>
               )}
               {errors.email?.type === "pattern" && (
                 <small className="fail">
                   {" "}
-                  El correo solo puede contener letras, numeros, puntos, guiones
-                  y guion bajo.
+                  Mail can only contain letters, numbers, periods, hyphens, and
+                  underscores
                 </small>
               )}
             </div>
 
             <div className="form-control">
-              <label>Mensaje</label>
+              <label>Menssage</label>
               <input
                 className="rectangle message"
-                placeholder="Ingrese su mensaje"
+                placeholder="Enter your message"
                 type="text"
                 {...register("message", {
                   required: true,
@@ -81,22 +81,19 @@ const FormValidation = () => {
                 })}
               />
               {errors.message?.type === "required" && (
-                <small className="fail">El campo no puede estar vacío</small>
+                <small className="fail">The field cannot be empty</small>
               )}
               {errors.message?.type === "minLength" && (
-                <small className="fail">
-                  El mínimo de caracteres debe ser 5
-                </small>
+                <small className="fail">The minimum characters must be 5</small>
               )}
               {errors.message?.type === "maxLength" && (
                 <small className="fail">
-                  El máximo de caracteres debe ser 200
+                  The maximum characters should be 200
                 </small>
               )}
             </div>
 
             <div className="form-check form-switch">
-             
               <Controller
                 name="checkbox"
                 control={control}
@@ -109,10 +106,11 @@ const FormValidation = () => {
                   />
                 )}
               />
-               <label>Acepto término y condiciones</label>
+              <label>I accept terms and conditions</label>
               {errors.checkbox?.type === "required" && (
                 <small className="fail">
-                  <br></br>El campo no puede estar vacío
+                  The field cannot be empty
+                  <br></br>
                 </small>
               )}
             </div>
@@ -130,8 +128,8 @@ const FormValidation = () => {
                   />
                 )}
               />
-               <label>
-                Acepta si quieres recibir noticias de nuestra Newletters
+              <label>
+                Accept if you want to receive news from our Newsletter
               </label>
             </div>
 
@@ -160,7 +158,7 @@ const FormValidation = () => {
             </div>
 
             <div className="form">
-              <button type="submit">Enviar</button>
+              <button type="submit">Send</button>
             </div>
           </form>
         </div>
