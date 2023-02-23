@@ -26,8 +26,7 @@ const Home = () => {
     <div>
       <Navbar/>
       <Carousel />
-      <Releases />
-      <Description />
+      <GridBooks books={dataBooks}/>
       <Form />
       <Footer />
     </div>
