@@ -1,11 +1,11 @@
 ## Project: "RARE BOOKS"
 
 1. [Project Description](#projectdescription)
-2. [User Stories](#userstories)
-3. [Team Members](#teammembers)
-4. [Stacks](#stacks)
-5. [Design](#design)
-5. [Goals](#goals)
+2. [Home Page](#homepage)
+3. [User Stories](#userstories)
+4. [Team Members](#teammembers)
+5. [Stacks](#stacks)
+6. [Goals](#goals)
 
 ## 1. Description
 This is a project developed for Hackathon F5 22-24 February 2023.
@@ -14,7 +14,11 @@ A marketplace website for rare book vendors and buyers was created.
 
 On this website, the vendor (specialist/antique/rare/independent book sellers) pays a fee to advertise books that they want to sell. Anyone looking for a specific book that is no longer for sale in mainstream bookshops can search for their book at this website. If they find the book on the website they can contact the vendor directly to purchase it. 
 
-## 2. User stories
+## 2. Home page 
+
+<img width="640" alt="Homepage" src="https://user-images.githubusercontent.com/116795553/221128890-0abf6867-b04d-410d-8b46-04eb5cbf495d.JPG">
+
+## 3. User stories
 <h3>2.1 User Story (User):</h3>
 <ul>
 <li>Access rare books.</li>
@@ -28,7 +32,7 @@ On this website, the vendor (specialist/antique/rare/independent book sellers) p
 <li>Notify the user of newly arrived books.</li>
 </ul>
 
-## 3. Team Members
+## 4. Team Members
 | Name | Role | |
 | :--- | :---: | :---: |
 | Mihaela Gheorghiu | Scrum Master | https://github.com/mihaelagheorghiu10 |
@@ -41,7 +45,7 @@ On this website, the vendor (specialist/antique/rare/independent book sellers) p
 | Iris Echeverría Montes | Developer | https://github.com/Jeann11 |
 | Marta Muñoz Molero | Developer | https://github.com/MartaMunMol |
 
-## 4. Stacks
+## 5. Stacks
 <img src= "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt = "html"></img>
 <img src= "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt = "css"></img>
 <img src= "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt= "javascript"></img>
@@ -64,9 +68,6 @@ On this website, the vendor (specialist/antique/rare/independent book sellers) p
 <li>Visual Studio Code </li>
 </ul>
 
-## 5. Design 
-
-<img width="640" alt="Homepage" src="https://user-images.githubusercontent.com/116795553/221128890-0abf6867-b04d-410d-8b46-04eb5cbf495d.JPG">
 
 
 ## 6. Goals 
