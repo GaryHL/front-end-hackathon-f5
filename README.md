@@ -1,4 +1,4 @@
-Project: "RARE BOOKS"
+## Project: "RARE BOOKS"
 
 1. [Project Description](#projectdescription)
 2. [User Stories](#userstories)
