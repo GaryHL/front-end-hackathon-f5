@@ -5,20 +5,21 @@ import Profile from "../views/profile/Profile";
 import Login from "../views/login/Login";
 import Register from "../views/register/Register";
 import NavBar from "../components/navbar/Navbar";
-
+import Footer from "../components/footer/Footer";
 
 const Router = () => {
-   return (
-      <BrowserRouter>
-      <NavBar/>
-         <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/profile" element={<Profile/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/register" element={<Register/>} />
-         </Routes>
-      </BrowserRouter>
-   );
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 };
 
-export default Router
+export default Router;

@@ -1,5 +1,4 @@
 import "./App.css";
-import Footer from "./components/footer/Footer";
 import Router from "./router/Router";
 import { axiosInterceptor } from "./interceptors/axios.interceptor";
 
@@ -10,7 +9,7 @@ function App() {
          <div className="App">
             <Router />
          </div>
-         <Footer />
+        
       </>
    );
 }

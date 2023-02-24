@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
 import { useForm, Controller } from "react-hook-form";
-
+//Controller Este componente contenedor le facilitará el trabajo con componentes controlados externos 
 import "./form.css";
 
 //Form Hilda
 
 const FormValidation = () => {
+  //checkButton es la variable que contiene el valor en este caso booleano 
+  //setCheckButton es el que actualiza la variable
+  //useState es el hook que permite agregar una variable de estado a su componente e inicializarla, en este caso, es false 
   const [checkButton, setCheckButton] = useState(false);
+  //useForm es un hook de formulario que proporciona propiedades para la facilidad de su uso
   const {
     register,
     handleSubmit,
@@ -15,11 +19,12 @@ const FormValidation = () => {
     control,
   } = useForm();
 
+  //customSubmit función que recoge los datos del formulario
   const customSubmit = (data) => {
     console.log(data);
     swal("Submitted form!", "Successful validation", "Success");
   };
-
+  //onSubmit se le asigna un método de useForm (handleSubmit) donde le pasamos como argumento la función que utilizaremos para manejar los datos (customSubmit)
   return (
     <>
       <div className="form-section" id="form">
