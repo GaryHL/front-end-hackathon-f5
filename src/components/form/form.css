@@ -5,10 +5,11 @@
     padding: 0px 20px;
     border: 3px solid #F9F9F9;
     margin: 10px 20px;
+    max-height: 90%;
   }
   h2 {
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
   }
   
   .rectangle {
@@ -55,7 +56,7 @@
     width: 70%;
     padding: 5px;
     font-size: 18px;
-    margin: 20px 50px;
+    margin: 5px auto;
   }
   .form-react button:hover {
     background-color: #363e65;
@@ -261,11 +262,6 @@
       width: 46%;
       margin-left: 77px;
       border: 3px solid #F9F9F9;
-     
-   
-      
-
-    
     }
 
    
@@ -275,6 +271,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       align-items: center;
+      height: auto;
       margin: 0 -59px;
     }
   
@@ -316,8 +313,7 @@
     }
   
     .form-react button {
-      width: 40%;
-      margin: 20px 150px;
+      margin:   5px auto !important;
     }
    
     .text {

@@ -17,7 +17,7 @@ const FormValidation = () => {
 
   const customSubmit = (data) => {
     console.log(data);
-    swal("Submitted form!", "Successful validation", "Success");
+    swal("Submitted form!", "Successful validation", "success");
   };
 
   return (
@@ -131,35 +131,10 @@ const FormValidation = () => {
               <label>
                 Accept if you want to receive news from our Newsletter
               </label>
+              
             </div>
-
-            <div className="captcha">
-              <div className="spinner">
-                <label>
-                  <input
-                    type="radio"
-                    onClick={() => setCheckButton(true)}
-                    disabled={checkButton}
-                  />
-                  <span className="checkmark">
-                    <span>&nbsp;</span>
-                  </span>
-                </label>
-                <div className="text">I'm not a robot</div>
-                <div className="logo">
-                  <img
-                    src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"
-                    alt=""
-                  />
-                  <p>reCAPTCHA</p>
-                  <small>Privacy - Terms</small>
-                </div>
-              </div>
-            </div>
-
-            <div className="form">
               <button type="submit">Send</button>
-            </div>
+
           </form>
         </div>
       </div>
