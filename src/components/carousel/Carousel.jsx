@@ -11,7 +11,7 @@ function IndividualIntervalsExample() {
             "RareBooks is a marketplace where you find the most unique second-hand books, research-technical manual and special edition",
       },
       {
-         imageSrc: "https://images.pexels.com/photos/5939401/pexels-photo-5939401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+         imageSrc: "https://images.pexels.com/photos/185764/pexels-photo-185764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
          captionTitle: "What you can do",
          captionDescription: "You have access to the most especials vendors",
       },
