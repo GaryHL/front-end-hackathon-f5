@@ -21,6 +21,7 @@ const Home = () => {
   return (
     <div className='container_home_view'>
       <Carousel />
+      <h1 className="top_books_title">Top Books:</h1>
       <GridBooks books={dataBooks}/>
       <Form />
       <Footer />
