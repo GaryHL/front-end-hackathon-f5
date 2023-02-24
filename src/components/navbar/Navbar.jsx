@@ -42,7 +42,7 @@ const handleChange = (e) => {
   return (
     <div>
       <Navbar className='navBarColor'>
-        <Container >
+        <div className='container_nav'>
           <Navbar.Brand><Link to="/" className='link_brand'>Rarebooks</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -66,7 +66,7 @@ const handleChange = (e) => {
             </Nav>
             
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
         {
           results !== null ?

@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer'
 import Carousel from '../../components/carousel/Carousel'
 import GridBooks from '../../components/grid_books/GridBooks'
 import { getAllBooks } from '../../services/books.service'
+import './home.css'
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
  
 
   return (
-    <div>
+    <div className='container_home_view'>
       <Carousel />
       <GridBooks books={dataBooks}/>
       <Form />
