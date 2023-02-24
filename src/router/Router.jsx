@@ -5,7 +5,7 @@ import Profile from "../views/profile/Profile";
 import Login from "../views/login/Login";
 import Register from "../views/register/Register";
 import NavBar from "../components/navbar/Navbar";
-import BookDetail from "../views/book_detail/BookDetail";
+import Footer from "../components/footer/Footer";import BookDetail from "../views/book_detail/BookDetail";
 
 const Router = () => {
    const [token, setToken] = useState(null)
@@ -13,22 +13,22 @@ const Router = () => {
       setToken(localStorage.getItem("token"))
    }, [])
    
-   return (
-      <BrowserRouter>
-         <NavBar />
-         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
+  return (
+    <BrowserRouter>
+         <NavBar  />
+      <Routes>
+        <Route path="/" element={<Home  />} />
+        <Route
                path="/profile"
                element={
                   token ? (
-                     <Profile />
+                     <Profile  />
                   ) : (
                      <Navigate to="/register" />
                   )
                }
             />
-            <Route
+        <Route
                path="/register"
                element={
                   token ? (
@@ -44,16 +44,17 @@ const Router = () => {
                   token ? (
                      <Navigate to="/" />
                   ) : (
-                     <Login />
+                     <Login  />
                   )
                }
             />
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/book/:bookId" element={<BookDetail />} />
-         </Routes>
-      </BrowserRouter>
-   );
+        <Route path="/register" element={<Register />} />
+            <Route path="/book/:bookId" element={<BookDetail  />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 };
 
 export default Router;
