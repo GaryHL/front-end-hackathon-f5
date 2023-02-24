@@ -28,7 +28,7 @@ export const getBook = (id) =>{
          Authorization: `Bearer ${token}`,
       },
    };
-   return axios.get(baseUrl + "/books/" + id,config);
+   return axios.get(baseUrl + "/books-public/" + id,config);
 }
 
 export const getMyBooks = () => {
@@ -51,5 +51,5 @@ export const getAllBooks = () => {
          Authorization: `Bearer ${token}`,
       },
    };
-   return axios.get(baseUrl + "/books",config);
+   return axios.get(baseUrl + "/books-public",config);
 };
