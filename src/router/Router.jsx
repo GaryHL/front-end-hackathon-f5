@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Home from "../views/home/Home";
 import Profile from "../views/profile/Profile";
@@ -8,6 +8,11 @@ import NavBar from "../components/navbar/Navbar";
 import BookDetail from "../views/book_detail/BookDetail";
 
 const Router = () => {
+   const [token, setToken] = useState(null)
+   useEffect(() => {
+      setToken(localStorage.getItem("token"))
+   }, [])
+   
    return (
       <BrowserRouter>
          <NavBar />
@@ -16,7 +21,7 @@ const Router = () => {
             <Route
                path="/profile"
                element={
-                  localStorage.getItem("token") ? (
+                  token ? (
                      <Profile />
                   ) : (
                      <Navigate to="/register" />
@@ -26,7 +31,7 @@ const Router = () => {
             <Route
                path="/register"
                element={
-                  localStorage.getItem("token") ? (
+                  token ? (
                      <Navigate to="/" />
                   ) : (
                      <Register />
@@ -36,7 +41,7 @@ const Router = () => {
             <Route
                path="/login"
                element={
-                  localStorage.getItem("token") ? (
+                  token ? (
                      <Navigate to="/" />
                   ) : (
                      <Login />

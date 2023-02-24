@@ -54,7 +54,7 @@ function NavBar() {
                <Navbar.Collapse id="navbarScroll">
                   <Nav
                      className="me-auto my-2 my-lg-0"
-                     style={{ maxHeight: "100px" }}
+                     style={{ maxHeight: "100px", gap:'1rem', alignItems:'center' }}
                      navbarScroll
                   >
                      <Form className="d-flex">
@@ -72,21 +72,21 @@ function NavBar() {
                            Search
                         </Button>
                      </Form>
-                     <Nav.Link>
-                        <Link to="/" className="link_brand">
-                           Home
-                        </Link>
-                     </Nav.Link>
-                     <Nav.Link>
-                        <Link to="/profile" className="link_brand">
-                           Perfil
-                        </Link>
-                     </Nav.Link>
-                     <Nav.Link>
-                        <p onClick={handleLogOut} className="link_brand danger">
+
+                     <Link to="/" className="link_brand">
+                        Home
+                     </Link>
+
+                     <Link to="/profile" className="link_brand">
+                        Perfil
+                     </Link>
+
+                     {localStorage.getItem("token") ? (
+                      
+                        <Link onClick={handleLogOut} className="link_brand danger">
                            Logout
-                        </p>
-                     </Nav.Link>
+                        </Link>
+                     ) : null}
                   </Nav>
                </Navbar.Collapse>
             </div>

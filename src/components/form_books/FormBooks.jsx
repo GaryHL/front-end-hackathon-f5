@@ -33,7 +33,7 @@ const FormBooks = () => {
     handleSubmitBook(formData);
     
     console.log("dataForm",formData);
-    swal("Submitted form!", "Successful validation", "Success");
+    swal("Submitted form!", "Successful validation", "success");
   };
 
   return (
@@ -50,7 +50,7 @@ const FormBooks = () => {
                 type="text"
                 {...register("title", {
                   required: true,
-                  maxLength: 42,
+                  maxLength: 200,
                 })}
               />
               {errors.title?.type === "required" && (
@@ -70,7 +70,7 @@ const FormBooks = () => {
                 {...register("description", {
                   required: true,
                   minLength: 5,
-                  maxLength: 200,
+                  maxLength: 1000,
                 })}
               />
               {errors.description?.type === "required" && (
@@ -94,7 +94,7 @@ const FormBooks = () => {
                 type="text"
                 {...register("category", {
                   required: true,
-                  maxLength: 16,
+                  maxLength: 200,
                 })}
               />
               {errors.category?.type === "required" && (
@@ -111,6 +111,7 @@ const FormBooks = () => {
                 className="place"
                 placeholder="Enter price"
                 type="number"
+                min='0'
                 {...register("price", {
                   required: true,
                 })}

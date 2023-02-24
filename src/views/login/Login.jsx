@@ -99,7 +99,7 @@ const Login = () => {
                      <input
                         className="place"
                         placeholder="password"
-                        type="text"
+                        type="password"
                         {...register("password", {
                            required: true,
                            maxLength: 16,

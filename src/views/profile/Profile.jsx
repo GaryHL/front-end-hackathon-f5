@@ -24,7 +24,7 @@ const Profile = () => {
     <div className='container_profile_view'>
         <h2>{userName ? userName : '..'}</h2>
         <div className="container_user_image">{userName ? userName[0] : '..'}</div>
-        <h2>Libros disponibles</h2>
+        <h2>Published books:</h2>
         <GridBooks books={books}/>
         <FormBooks/>
     </div>
