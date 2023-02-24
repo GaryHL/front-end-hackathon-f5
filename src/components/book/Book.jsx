@@ -3,7 +3,7 @@ import "./book.css";
 import {BsCartPlus} from 'react-icons/bs'
 import { Link } from "react-router-dom";
 
-const Book = ({ book }) => {
+const Book = ({ book, min}) => {
    const baseUrl = import.meta.env.VITE_IMAGES_URL;
 
    console.log(baseUrl+book.image);
@@ -14,10 +14,11 @@ const Book = ({ book }) => {
          </Link>
          </div>
             <h4 className="title_book">{book.title}</h4>
-         <div className="container_footer_book">
+            {min?null : <div className="container_footer_book">
             <p className="price">{book.price}33 USD</p>
             <div className="button_add"><BsCartPlus/>Añadir</div>
-         </div>
+         </div> }
+         
       </div>
    );
 };

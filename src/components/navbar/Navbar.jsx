@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Book from '../book/Book';
 
 function NavBar() {
 
@@ -24,12 +25,18 @@ const handleChange = (e) => {
 
 
   const handleSearch = async () => {
+    if(busqueda.length > 0){
     await axios.get("http://localhost:8000/api/search/"+busqueda)
   .then(response=>{
-    setResults(response.data)
-  }).catch(error=>{
-    console.log(error);
-  })
+      setResults(response.data)
+      
+    }).catch(error=>{
+      console.log(error);
+    })
+  }
+  else{
+    setResults(null);
+  }
   }
 
   return (
@@ -54,8 +61,6 @@ const handleChange = (e) => {
                 />
                 <Button variant="outline-success" onClick={handleSearch}>Search</Button>
               </Form>
-              <Nav.Link href="#action2">My Books</Nav.Link>
-              <Nav.Link href="#action3">Favourites</Nav.Link>
               <Nav.Link ><Link to="/" className='link_brand'>Home</Link></Nav.Link>
               <Nav.Link ><Link to="/profile" className='link_brand'>Perfil</Link></Nav.Link>
             </Nav>
@@ -64,25 +69,20 @@ const handleChange = (e) => {
         </Container>
       </Navbar>
         {
-          results &&
-          <Row style={{padding: '5px'}} className='navBarColor'>
+          results !== null ?
+          <Row style={{padding: '2vh 10% '}} className='navBarColor'>
             {
               results.map(result => {
                 return (
-                    <Card style={{ maxWidth: '120px', margin: '5px' }}>
-                      <Card.Img variant="top" src={result.image} style={{maxWidth: '80px', margin: '0 auto', marginTop: '10px'}}/>
-                      <Card.Body>
-                        <Card.Title style={{fontSize: '12px', fontWeight: 'bold', textAlign: 'center'}}>{result.title}</Card.Title>
-                        <Card.Text style={{fontSize: '10px', textAlign: 'left'}}>
-                          {result.category}<br></br>
-                          EUR {result.price}
-                        </Card.Text>
+                    <Card style={{ maxWidth: '150px', margin: '5px' }}>
+                      <Card.Body style={{padding:"0.5rem 0"}}>
+                        <Book book={result} min={true}/>
                       </Card.Body>
                     </Card>
                 )
               })
-            }
-          </Row>
+            }{results.length === 0? 'not found' : null}
+          </Row>: null
         }
     </div>
   );
