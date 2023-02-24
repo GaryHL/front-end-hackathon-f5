@@ -6,7 +6,7 @@ export const login = (data) => {
    return axios.post(baseUrl + "/login", data);
 };
 
-export const register = (data) => {
+export const registerPost = (data) => {
    return axios.post(baseUrl + "/register", data);
 };
 
