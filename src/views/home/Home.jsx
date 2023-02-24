@@ -23,8 +23,8 @@ const Home = () => {
       <Carousel />
       <h1 className="top_books_title">Top Books:</h1>
       <GridBooks books={dataBooks}/>
+      <br />
       <Form />
-      <Footer />
     </div>
   )
 }
