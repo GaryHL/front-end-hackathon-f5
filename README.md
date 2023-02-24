@@ -1,6 +1,13 @@
-<h1>Project: "RARE BOOKS"</h1>
+Project: "RARE BOOKS"
 
-## 1. Project description
+1. [Project Description](#projectdescription)
+2. [User Stories](#userstories)
+3. [Team Members](#teammembers)
+4. [Stacks](#stacks)
+5. [Design](#design)
+5. [Goals](#goals)
+
+## 1. Description
 This is a project developed for Hackathon F5 22-24 February 2023.
 
 A marketplace website for rare book vendors and buyers was created. 
@@ -35,17 +42,18 @@ On this website, the vendor (specialist/antique/rare/independent book sellers) p
 | Marta Muñoz Molero | Developer | https://github.com/MartaMunMol |
 
 ## 4. Stacks
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-<li>PHP 8.1.10</li>
-<li>Laravel</li>
-<li>React </li>
-<li>React Bootstrap</li>
-</ul>
+<img src= "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt = "html"></img>
+<img src= "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt = "css"></img>
+<img src= "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt= "javascript"></img>
+<img src= "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt= "php"></img>
+<img src= "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt= "github"></img>
+<img src= "https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt= "laravel"></img><br>
+<img src= "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt= "react"></img>
+<img src= "https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt= "bootstrap"></img>
 
-<h3> Tools <h3>
+
+## Tools 
+
 <ul>
 <li>Agile methodology - Scrum </li>
 <li>Trello - User Story and tasks </li>
@@ -56,10 +64,14 @@ On this website, the vendor (specialist/antique/rare/independent book sellers) p
 <li>Visual Studio Code </li>
 </ul>
 
-## 5. Goals 
+## 5. Design 
+
+<img width="640" alt="Homepage" src="https://user-images.githubusercontent.com/116795553/221128890-0abf6867-b04d-410d-8b46-04eb5cbf495d.JPG">
+
+
+## 6. Goals 
 <ul>
 <li>Use of a package manager </li>
-<li>Automation of tests </li>
 <li>Compile deployment artefacts </li>
 <li>Continuous Integration/ Continuous Deployment </li>
 </ul>
