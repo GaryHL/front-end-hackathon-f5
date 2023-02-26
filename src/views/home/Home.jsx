@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Form from '../../components/form/Form'
-import Footer from '../../components/footer/Footer'
-import Releases from '../../components/Releases/Releases'
-import Description from '../../components/description/Description'
 import Carousel from '../../components/carousel/Carousel'
 import GridBooks from '../../components/grid_books/GridBooks'
 import { getAllBooks } from '../../services/books.service'
+import Footer from '../../components/footer/Footer'
 import './home.css'
 
 const Home = () => {
@@ -27,7 +25,6 @@ const Home = () => {
       <GridBooks books={dataBooks}/>
       <br />
       <Form />
-  
     </div>
   )
 }

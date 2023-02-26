@@ -15,7 +15,7 @@ const Book = ({ book, min}) => {
          </div>
             <h4 className="title_book">{book.title}</h4>
             {min?null : <div className="container_footer_book">
-            <p className="price">{book.price}33 USD</p>
+            <p className="price">{book.price} USD</p>
             <div className="button_add"><BsCartPlus/>Añadir</div>
          </div> }
          
