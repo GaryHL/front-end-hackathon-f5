@@ -77,17 +77,12 @@
       width: 46%;
       margin-left: 77px;
       border: 3px solid #F9F9F9;
-     
    
-      
-
-    
     }
 
    
   
     .form-section {
-      background-image: url("../../assets/images/form.png");
       background-repeat: no-repeat;
       background-size: cover;
       align-items: center;
@@ -121,7 +116,6 @@
         width:95%;
     }
     .form-section {
-      background-image: url("../../assets/images/form.png");
       height: 90vh;
       background-size: 100% cover;
       background-repeat: no-repeat;
@@ -140,11 +134,6 @@
       font-size: 1.2em;
       font-weight: 500;
       margin-right: 1em;
-  }
-  
-  .captcha {
-    width: 372px;
-    margin: 15px 50px;
   }
   }
   
