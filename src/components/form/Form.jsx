@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
 import { useForm, Controller } from "react-hook-form";
-
+//Controller Este componente contenedor le facilitará el trabajo con componentes controlados externos 
 import "./form.css";
 
 //Form Hilda
 
 const FormValidation = () => {
+  //checkButton es la variable que contiene el valor en este caso booleano 
+  //setCheckButton es el que actualiza la variable
+  //useState es el hook que permite agregar una variable de estado a su componente e inicializarla, en este caso, es false 
   const [checkButton, setCheckButton] = useState(false);
+  //useForm es un hook de formulario que proporciona propiedades para la facilidad de su uso
   const {
     register,
     handleSubmit,
@@ -15,11 +19,12 @@ const FormValidation = () => {
     control,
   } = useForm();
 
+  //customSubmit función que recoge los datos del formulario
   const customSubmit = (data) => {
     console.log(data);
-    swal("Submitted form!", "Successful validation", "Success");
+    swal("Submitted form!", "Successful validation", "success");
   };
-
+  //onSubmit se le asigna un método de useForm (handleSubmit) donde le pasamos como argumento la función que utilizaremos para manejar los datos (customSubmit)
   return (
     <>
       <div className="form-section" id="form">
@@ -131,35 +136,10 @@ const FormValidation = () => {
               <label>
                 Accept if you want to receive news from our Newsletter
               </label>
+              
             </div>
-
-            <div className="captcha">
-              <div className="spinner">
-                <label>
-                  <input
-                    type="radio"
-                    onClick={() => setCheckButton(true)}
-                    disabled={checkButton}
-                  />
-                  <span className="checkmark">
-                    <span>&nbsp;</span>
-                  </span>
-                </label>
-                <div className="text">I'm not a robot</div>
-                <div className="logo">
-                  <img
-                    src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"
-                    alt=""
-                  />
-                  <p>reCAPTCHA</p>
-                  <small>Privacy - Terms</small>
-                </div>
-              </div>
-            </div>
-
-            <div className="form">
               <button type="submit">Send</button>
-            </div>
+
           </form>
         </div>
       </div>

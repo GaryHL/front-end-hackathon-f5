@@ -1,0 +1,10 @@
+.container_book_datails{
+    background-color: #F2F0F0;
+    width:100%;
+    padding:5vh 5%;
+    padding-bottom: 10vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
